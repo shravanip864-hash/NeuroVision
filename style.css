@@ -1,0 +1,67 @@
+body{
+    margin:0;
+    background:#050816;
+    font-family:Arial;
+    color:white;
+    text-align:center;
+}
+
+.container{
+    padding:20px;
+}
+
+h1{
+    color:#00ffff;
+}
+
+#levelInfo{
+    font-size:24px;
+    margin:10px;
+}
+
+#message{
+    margin:20px;
+    font-size:20px;
+}
+
+#startBtn{
+    padding:12px 25px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    background:#00ffff;
+}
+
+#grid{
+    width:420px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.cell{
+    width:95px;
+    height:95px;
+    background:#121a33;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.cell:hover{
+    transform:scale(1.05);
+}
+
+.correct{
+    background:green;
+}
+
+.wrong{
+    background:red;
+}
